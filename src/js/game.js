@@ -14,7 +14,9 @@ export class Game extends Engine {
         console.log(Resources);
 
         const fish = new Actor()
-        fish.graphics.use(Resources.Fish.toSprite())
+        let fishSprite = Resources.Fish.toSprite();
+        fishSprite.flipHorizontal = true;
+        fish.graphics.use(fishSprite)
         fish.pos = new Vector(400, 300)
         fish.vel = new Vector(-10,0)
         this.add(fish)
