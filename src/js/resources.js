@@ -1,17 +1,26 @@
-import { ImageSource, Sound, Resource, Loader } from 'excalibur'
-import fishImage from '../images/fish.png'
-import guineaPigImage from '../images/guinea-pig.png'
-import swordImage from '../images/sword.png'
+import { ImageSource, Sound, Resource, Loader } from 'excalibur';
+import greenFishImage from '../images/greenfish.png';
+import purpleFishImage from '../images/purplefish.png';
+import redFishImage from '../images/redfish.png';
+import yellowFishImage from '../images/yellowfish.png';
+import skeletonFishImage from '../images/skeletonfish.png';
+import backgroundImage from '../images/sea.jpg';
 
 const Resources = {
-    Fish: new ImageSource(fishImage),
-    GuineaPig: new ImageSource(guineaPigImage),
-    Sword: new ImageSource(swordImage)
-}
+    GreenFish: new ImageSource(greenFishImage),
+    PurpleFish: new ImageSource(purpleFishImage),
+    RedFish: new ImageSource(redFishImage),
+    YellowFish: new ImageSource(yellowFishImage),
+    SkeletonFish: new ImageSource(skeletonFishImage),
+    Background: new ImageSource(backgroundImage)
+};
 const ResourceLoader = new Loader([
-    Resources.Fish,
-    Resources.GuineaPig,
-    Resources.Sword
+    Resources.GreenFish,
+    Resources.PurpleFish,
+    Resources.RedFish,
+    Resources.YellowFish,
+    Resources.SkeletonFish,
+    Resources.Background
 ])
 
 export { Resources, ResourceLoader }
